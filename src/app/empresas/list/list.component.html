@@ -1,0 +1,11 @@
+<div class="card mt-2" *ngFor="let empresa of empresas | async">
+    <div class="card-body">
+        <h5 class="card-title">{{empresa.nomeFantasia}}</h5>
+        <p class="card-text">{{empresa.razaoSocial}}</p>
+        <p class="card-text">{{empresa.cnpj}}</p>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-default" (click)="edit(empresa, empresa.key)">Editar</button>
+        <button type="button" class="btn btn-danger ml-2" (click)="delete(empresa.key)">Excluir</button>
+    </div>
+</div>

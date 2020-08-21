@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/empresa'" [routerLinkActive]="'active'">Empresas</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/funcionario'" [routerLinkActive]="'active'">Funcionários</a>
+          </li> -->
+        </ul>
+    </div>
+</nav>
+
+<br>
+<br>
+<div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5">
+        <empresa-edit></empresa-edit>
+    </div>
+    <div class="container mt-5 mb-5">
+        <empresa-list></empresa-list>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5">
+        <funcionario-edit></funcionario-edit>
+    </div>
+    <div class="container mt-5 mb-5">
+        <funcionario-list></funcionario-list>
+    </div>
+</div>

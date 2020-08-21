@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>CNPJ</label>
+        <input type="text" class="form-control" [(ngModel)]="empresa.cnpj" name="cnpj" />
+    </div>
+    <div class="form-group">
+        <label>Razão Social</label>
+        <input type="text" class="form-control" [(ngModel)]="empresa.razaoSocial" name="razaoSocial" />
+    </div>
+    <div class="form-group">
+        <label>Nome Fantasia</label>
+        <input type="text" class="form-control" [(ngModel)]="empresa.nomeFantasia" name="nomeFantasia" />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
